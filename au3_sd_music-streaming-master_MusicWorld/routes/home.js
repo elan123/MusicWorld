@@ -26,7 +26,7 @@ spotifyApi.clientCredentialsGrant().then(
 
 router.get('/', function (req, res) {
     spotifyApi.getAlbums(['4byzDhvVyWc8kakTvxfejQ', '11YJfivZjEaEUU9lJmeidh',
-            '58colQLIZDAInrHq3eT2PF', '4neocSMt40stXKK2B8Sy2G',
+            '58colQLIZDAInrHq3eT2PF', '5gkkfFiedjuYeCM0v4IlZu',
             '6cunQQ7YZisYOoiFu2ywIq', '7LF4N7lvyDhrPBuCJ1rplJ',
             '6leYdBPs1XzfUgpc8xgeSi', '3RZxrS2dDZlbsYtMRM89v8', '7J5iE51Mk97Mf0BjjwYXUZ'
         ],
@@ -73,7 +73,7 @@ router.get('/', function (req, res) {
                             if (err) throw err;
                             var resultThree = data.body.items[0];
                             // Get tracks in fourth album
-                            spotifyApi.getAlbumTracks('4neocSMt40stXKK2B8Sy2G', {
+                            spotifyApi.getAlbumTracks('5gkkfFiedjuYeCM0v4IlZu', {
                                 limit: 1,
                                 offset: 1
                                 }, function (err, data) {
@@ -115,7 +115,7 @@ router.get('/', function (req, res) {
                                                                  if (err) throw err;
                                                                  var resultNine = data.body.items[0];
                                                                   res.render('index', {
-                                                                      title: 'Musify',
+                                                                      title: 'Music World',
                                                                       style: 'index.css',
                                                                       script: 'addToPlay.js',
                                                                       firstAlbumImage: firstAlbumImage,
