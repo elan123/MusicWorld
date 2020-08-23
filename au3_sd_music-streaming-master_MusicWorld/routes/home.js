@@ -25,10 +25,10 @@ spotifyApi.clientCredentialsGrant().then(
 );
 
 router.get('/', function(req, res) {
-	spotifyApi.getAlbums(['1oA5gS57LrStSzavWwXZHx', '2VhEkjIRkcyETAwCrt6XR0',
-		'2X8UOIkZQdcz2Hi5Ynt2uk', '52smeiovut2Hhkja6x992D',
+	spotifyApi.getAlbums(['1qsm7UXvfm3vTGr1UFKaAH', '4zWNhzZELsqulV8Y2aSZeq',
+		'5zrZPXoYsu772sB3CwVuxr', '2X8UOIkZQdcz2Hi5Ynt2uk',
 		'3T4tUhGYeRNVUGevb0wThu', '7LF4N7lvyDhrPBuCJ1rplJ',
-		'6leYdBPs1XzfUgpc8xgeSi', '3RZxrS2dDZlbsYtMRM89v8', '1tuyae3OJleKl8rAY743Qa',
+		'6leYdBPs1XzfUgpc8xgeSi', '3RZxrS2dDZlbsYtMRM89v8', '2zkyMw73XzNXUQaXTb4cio',
 		'3NAMtgP845mM6cJjYDYy1g', '053rrmSCLKCIOJG9mw8XXR', '3Gef2xMe3ihEF1UILkiriu', '5MqnE5fKbjWn25aA091gd0',
 		'5a3Je5YG4cYIS0Yg4ZoY01', '75tmDdVdpjSQwoEc0WjRug'
 	],
@@ -66,28 +66,28 @@ router.get('/', function(req, res) {
 			var t6AlbumName = data.body.albums[14].name;
 
 			// get tracks in first album
-			spotifyApi.getAlbumTracks('1oA5gS57LrStSzavWwXZHx', {
+			spotifyApi.getAlbumTracks('1qsm7UXvfm3vTGr1UFKaAH', {
 				limit: 1,
 				offset: 1
 			}, function(err, data) {
 				if (err) throw err;
 				var resultOne = data.body.items[0];
 				// Get tracks in second album
-				spotifyApi.getAlbumTracks('2VhEkjIRkcyETAwCrt6XR0', {
+				spotifyApi.getAlbumTracks('4zWNhzZELsqulV8Y2aSZeq', {
 					limit: 1,
 					offset: 1
 				}, function(err, data) {
 					if (err) throw err;
 					var resultTwo = data.body.items[0];
 					// Get tracks in third album
-				spotifyApi.getAlbumTracks('2X8UOIkZQdcz2Hi5Ynt2uk', {
+				spotifyApi.getAlbumTracks('5zrZPXoYsu772sB3CwVuxr', {
 					limit: 2,
 					offset: 1
 				}, function(err, data) {
 					if (err) throw err;
 					var resultThree = data.body.items[0];
 						// Get tracks in fourth album
-						spotifyApi.getAlbumTracks('52smeiovut2Hhkja6x992D', {
+						spotifyApi.getAlbumTracks('2X8UOIkZQdcz2Hi5Ynt2uk', {
 							limit: 1,
 							offset: 1
 						}, function(err, data) {
@@ -122,7 +122,7 @@ router.get('/', function(req, res) {
 											if (err) throw err;
 											var resultEigth = data.body.items[0];
 											// Get tracks in ninth album
-											spotifyApi.getAlbumTracks('1tuyae3OJleKl8rAY743Qa', {
+											spotifyApi.getAlbumTracks('2zkyMw73XzNXUQaXTb4cio', {
 												limit: 1,
 												offset: 1
 											}, function(err, data) {
