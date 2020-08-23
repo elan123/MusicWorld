@@ -41,12 +41,32 @@
 
 }
 
+#t1 {
+    line-height: 1;
+    font-size: 14px;
+
+}
 #six {
     line-height: 1.3;
     font-size: 17.5px;
 
 }
 
+#t3 {
+    line-height: 1.3;
+    font-size: 17.5px;
+
+}
+
+#songNamet4{
+	line-height: 1;
+    font-size: 14px;
+}
+
+#songNamet5{
+	line-height: 1;
+    font-size: 14px;
+}
 #home-title {
     padding-top: 54px;
 }
