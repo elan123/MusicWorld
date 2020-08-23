@@ -26,7 +26,7 @@ spotifyApi.clientCredentialsGrant().then(
 
 router.get('/', function(req, res) {
 	spotifyApi.getAlbums(['1oA5gS57LrStSzavWwXZHx', '2VhEkjIRkcyETAwCrt6XR0',
-		'7azo4rpSUh8nXgtonC6Pkq', '52smeiovut2Hhkja6x992D',
+		'2X8UOIkZQdcz2Hi5Ynt2uk', '52smeiovut2Hhkja6x992D',
 		'3T4tUhGYeRNVUGevb0wThu', '7LF4N7lvyDhrPBuCJ1rplJ',
 		'6leYdBPs1XzfUgpc8xgeSi', '3RZxrS2dDZlbsYtMRM89v8', '1tuyae3OJleKl8rAY743Qa',
 		'3NAMtgP845mM6cJjYDYy1g', '053rrmSCLKCIOJG9mw8XXR', '3Gef2xMe3ihEF1UILkiriu', '5MqnE5fKbjWn25aA091gd0',
@@ -80,7 +80,7 @@ router.get('/', function(req, res) {
 					if (err) throw err;
 					var resultTwo = data.body.items[0];
 					// Get tracks in third album
-				spotifyApi.getAlbumTracks('7azo4rpSUh8nXgtonC6Pkq', {
+				spotifyApi.getAlbumTracks('2X8UOIkZQdcz2Hi5Ynt2uk', {
 					limit: 2,
 					offset: 1
 				}, function(err, data) {
